@@ -1,0 +1,16 @@
+# Example of how to use the ninjafirewall-syslog filter in jail.local
+#
+# The maxretry override variable should be kept low since this
+# is a brute force attack being detected by ninjafirewall, not an
+# accidental password typo.
+#
+# JAILS
+#
+
+[ninjafirewall-syslog]
+port = http,https
+filter = ninjafirewall-syslog
+logpath = %(syslog_ftp)s
+backend = %(syslog_backend)s
+maxretry = 2
+enabled = true
