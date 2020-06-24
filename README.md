@@ -25,6 +25,6 @@ How to use:
 Additional Notes:
 
 * Keep the `maxretry` override value low; 2 is good, 1 is too low. Attacks are often distributed, with each IP address only being used once. This will create a lot of unnecessary IP bans. Heavier attacks, or smaller bot-nets, will reuse IP addresses, so a setting of 2 will block them.
-* If using CloudFlare on the web site, please see the [fail2ban-action-cloudflare-restv4](https://github.com/wpkc/fail2ban-filter-ninjafirewall-wp) repository for an updated CloudFlare action configuration file.
+* If using CloudFlare on the web site, please see the [fail2ban-action-cloudflare-restv4](https://github.com/wpkc/fail2ban-action-cloudflare-restv4) repository for an updated CloudFlare action configuration file.
 
 More info: <https://www.kazimer.com/fail2ban-ninjafirewall-wp-plus-syslog-events/>
